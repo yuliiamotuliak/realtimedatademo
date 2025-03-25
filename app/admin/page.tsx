@@ -45,7 +45,9 @@ export default function AdminPage() {
   );
 }
 
-const styles = {
+import { CSSProperties } from "react";
+
+const styles: { [key: string]: CSSProperties } = {
   container: {
     height: "100vh",
     display: "flex",

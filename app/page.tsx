@@ -33,7 +33,7 @@ const styles = {
   container: {
     height: "100vh",
     display: "flex",
-    flexDirection: "column",
+    flexDirection: "column" as React.CSSProperties["flexDirection"],
     justifyContent: "center",
     alignItems: "center",
     background: "linear-gradient(135deg, #74ebd5, #ACB6E5)",
@@ -52,7 +52,7 @@ const styles = {
     maxWidth: "500px",
     borderRadius: "10px",
     boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
-    textAlign: "center",
+    textAlign: "center" as const,
   },
   subtitle: {
     fontSize: "22px",
@@ -65,6 +65,6 @@ const styles = {
     padding: "10px",
     borderRadius: "6px",
     background: "#ecf0f1",
-    wordWrap: "break-word",
+    overflowWrap: "break-word" as "break-word",
   },
 };
